@@ -2,6 +2,6 @@
 SELECT title
 FROM books
 JOIN books_subjects ON books_subjects.book = books.id
-JOIN subjects ON subjects.id = books_subjects.id
+JOIN subjects ON subjects.id = books_subjects.subject
 WHERE subjects.name IN ('Technology','Politics');
 
